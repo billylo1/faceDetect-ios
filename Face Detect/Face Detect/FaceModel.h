@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <ncnn/ncnn/net.h>
+#import "ncnn.framework/Versions/A/Headers/ncnn/net.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FaceModel : NSObject{

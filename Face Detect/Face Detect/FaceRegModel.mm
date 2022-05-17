@@ -7,7 +7,7 @@
 //
 
 #import "FaceRegModel.h"
-#import <ncnn/ncnn/net.h>
+#import "ncnn.framework/Versions/A/Headers/ncnn/net.h"
 
 
 static int image_w;

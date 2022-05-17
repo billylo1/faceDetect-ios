@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,12 +13,10 @@
 		4C0B671F237AE55700DD0A97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B671E237AE55700DD0A97 /* Assets.xcassets */; };
 		4C0B6722237AE55700DD0A97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6720237AE55700DD0A97 /* LaunchScreen.storyboard */; };
 		4C0B6725237AE55700DD0A97 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B6724237AE55700DD0A97 /* main.m */; };
-		4C0B672C237AE57300DD0A97 /* ncnn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0B672B237AE57300DD0A97 /* ncnn.framework */; };
 		4C0B672F237AE59500DD0A97 /* FaceModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C0B672E237AE59500DD0A97 /* FaceModel.mm */; };
 		4C0B6733237AE87300DD0A97 /* RFB-320.param in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6731237AE87300DD0A97 /* RFB-320.param */; };
 		4C0B6734237AE87300DD0A97 /* RFB-320.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6732237AE87300DD0A97 /* RFB-320.bin */; };
 		4C0B6738237AEE7B00DD0A97 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B6737237AEE7B00DD0A97 /* 4.jpg */; };
-		4C0B673A237BA10200DD0A97 /* openmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0B6739237BA10200DD0A97 /* openmp.framework */; };
 		4C0B6740237BAE0200DD0A97 /* slim_320.bin in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B673E237BAE0100DD0A97 /* slim_320.bin */; };
 		4C0B6741237BAE0200DD0A97 /* slim_320.param in Resources */ = {isa = PBXBuildFile; fileRef = 4C0B673F237BAE0100DD0A97 /* slim_320.param */; };
 		4C7D1FB0238678B80078BD71 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7D1FAF238678B80078BD71 /* AVFoundation.framework */; };
@@ -33,6 +31,8 @@
 		4C7D1FDC238CB9720078BD71 /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1FD9238CB9720078BD71 /* face1.png */; };
 		4C7D1FDD238CB9720078BD71 /* IanWong1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1FDA238CB9720078BD71 /* IanWong1.png */; };
 		4C7D1FDE238CB9720078BD71 /* IanWong.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1FDB238CB9720078BD71 /* IanWong.png */; };
+		BD12B2EE28331D0D00F1FC38 /* ncnn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD12B2ED28331D0D00F1FC38 /* ncnn.framework */; };
+		BD12B2F028331D1400F1FC38 /* openmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD12B2EF28331D1400F1FC38 /* openmp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,13 +46,11 @@
 		4C0B6721237AE55700DD0A97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0B6723237AE55700DD0A97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C0B6724237AE55700DD0A97 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C0B672B237AE57300DD0A97 /* ncnn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ncnn.framework; sourceTree = "<group>"; };
 		4C0B672D237AE59500DD0A97 /* FaceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FaceModel.h; sourceTree = "<group>"; };
 		4C0B672E237AE59500DD0A97 /* FaceModel.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceModel.mm; sourceTree = "<group>"; };
 		4C0B6731237AE87300DD0A97 /* RFB-320.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "RFB-320.param"; sourceTree = "<group>"; };
 		4C0B6732237AE87300DD0A97 /* RFB-320.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "RFB-320.bin"; sourceTree = "<group>"; };
 		4C0B6737237AEE7B00DD0A97 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
-		4C0B6739237BA10200DD0A97 /* openmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openmp.framework; sourceTree = "<group>"; };
 		4C0B673E237BAE0100DD0A97 /* slim_320.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = slim_320.bin; sourceTree = "<group>"; };
 		4C0B673F237BAE0100DD0A97 /* slim_320.param */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = slim_320.param; sourceTree = "<group>"; };
 		4C7D1FAF238678B80078BD71 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +67,8 @@
 		4C7D1FD9238CB9720078BD71 /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
 		4C7D1FDA238CB9720078BD71 /* IanWong1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IanWong1.png; sourceTree = "<group>"; };
 		4C7D1FDB238CB9720078BD71 /* IanWong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IanWong.png; sourceTree = "<group>"; };
+		BD12B2ED28331D0D00F1FC38 /* ncnn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ncnn.framework; sourceTree = "<group>"; };
+		BD12B2EF28331D1400F1FC38 /* openmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openmp.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +79,8 @@
 				4C7D1FBA23867CF30078BD71 /* CoreMedia.framework in Frameworks */,
 				4C7D1FB5238679B20078BD71 /* CoreImage.framework in Frameworks */,
 				4C7D1FB0238678B80078BD71 /* AVFoundation.framework in Frameworks */,
-				4C0B673A237BA10200DD0A97 /* openmp.framework in Frameworks */,
-				4C0B672C237AE57300DD0A97 /* ncnn.framework in Frameworks */,
+				BD12B2F028331D1400F1FC38 /* openmp.framework in Frameworks */,
+				BD12B2EE28331D0D00F1FC38 /* ncnn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,10 +110,10 @@
 				4C7D1FC7238C1D2D0078BD71 /* face_recg */,
 				4C7D1FB2238678E40078BD71 /* VideoViewController.h */,
 				4C7D1FB1238678E40078BD71 /* VideoViewController.mm */,
+				BD12B2ED28331D0D00F1FC38 /* ncnn.framework */,
+				BD12B2EF28331D1400F1FC38 /* openmp.framework */,
 				4C0B673D237BAE0100DD0A97 /* face_detect */,
-				4C0B6739237BA10200DD0A97 /* openmp.framework */,
 				4C0B6730237AE87300DD0A97 /* version-RFB */,
-				4C0B672B237AE57300DD0A97 /* ncnn.framework */,
 				4C0B6715237AE55400DD0A97 /* AppDelegate.h */,
 				4C0B6716237AE55400DD0A97 /* AppDelegate.m */,
 				4C0B6718237AE55400DD0A97 /* ViewController.h */,
@@ -201,15 +201,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = Sunyard;
+				ORGANIZATIONNAME = Evergreen;
 				TargetAttributes = {
 					4C0B6711237AE55400DD0A97 = {
 						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 4C0B670D237AE55400DD0A97 /* Build configuration list for PBXProject "Face Detect" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -402,9 +403,10 @@
 		4C0B6729237AE55700DD0A97 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9753JG9F5;
+				DEVELOPMENT_TEAM = F6X27PB5BH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -412,13 +414,14 @@
 					"$(PROJECT_DIR)/Face\\ Detect",
 					"$(PROJECT_DIR)/Face\\ Detect",
 					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect/**",
+					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect",
 				);
 				INFOPLIST_FILE = "Face Detect/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ianwong.Sunyard.com.Face-Detect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,9 +431,10 @@
 		4C0B672A237AE55700DD0A97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W9753JG9F5;
+				DEVELOPMENT_TEAM = F6X27PB5BH;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,13 +442,14 @@
 					"$(PROJECT_DIR)/Face\\ Detect",
 					"$(PROJECT_DIR)/Face\\ Detect",
 					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect/**",
+					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect",
 				);
 				INFOPLIST_FILE = "Face Detect/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "ianwong.Sunyard.com.Face-Detect";
 				PRODUCT_NAME = "$(TARGET_NAME)";
