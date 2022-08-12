@@ -84,9 +84,7 @@ public:
     // shader tensor storage
     bool support_tensor_storage;
 
-    // TODO drop these fields
-    bool use_int8_inference;
-    bool support_weight_fp16_storage;
+    bool support_reserved_00;
 
     bool support_reserved_0;
     bool support_reserved_1;
@@ -101,6 +99,7 @@ public:
     bool support_reserved_10;
     bool support_reserved_11;
     bool support_reserved_12;
+    bool support_reserved_13;
 
 public:
     // implement inference

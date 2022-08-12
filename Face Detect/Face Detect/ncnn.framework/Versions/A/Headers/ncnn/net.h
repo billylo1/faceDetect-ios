@@ -61,6 +61,7 @@ public:
     // register custom layer by layer type name
     // return 0 if success
     int register_custom_layer(const char* type, layer_creator_func creator, layer_destroyer_func destroyer = 0, void* userdata = 0);
+    virtual int custom_layer_to_index(const char* type);
 #endif // NCNN_STRING
     // register custom layer by layer type
     // return 0 if success
@@ -128,6 +129,14 @@ public:
     // construct an Extractor from network
     Extractor create_extractor() const;
 
+    // get input/output indexes/names
+    const std::vector<int>& input_indexes() const;
+    const std::vector<int>& output_indexes() const;
+#if NCNN_STRING
+    const std::vector<const char*>& input_names() const;
+    const std::vector<const char*>& output_names() const;
+#endif
+
     const std::vector<Blob>& blobs() const;
     const std::vector<Layer*>& layers() const;
 
@@ -139,7 +148,6 @@ protected:
 #if NCNN_STRING
     int find_blob_index_by_name(const char* name) const;
     int find_layer_index_by_name(const char* name) const;
-    virtual int custom_layer_to_index(const char* type);
     virtual Layer* create_custom_layer(const char* type);
 #endif // NCNN_STRING
     virtual Layer* create_custom_layer(int index);
@@ -163,6 +171,9 @@ public:
 
     // assign
     Extractor& operator=(const Extractor&);
+
+    // clear blob mats and alloctors
+    void clear();
 
     // enable light mode
     // intermediate blob will be recycled when enabled

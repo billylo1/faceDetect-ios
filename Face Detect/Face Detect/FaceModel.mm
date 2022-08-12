@@ -7,7 +7,7 @@
 //
 
 #import "FaceModel.h"
-#import "ncnn.framework/Versions/A/Headers/ncnn/net.h"
+#import <ncnn/ncnn/net.h>
 
 #define clip(x, y) (x < 0 ? 0 : (x > y ? y : x))
 #define hard_nms 1

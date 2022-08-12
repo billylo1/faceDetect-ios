@@ -51,9 +51,37 @@ NCNN_EXPORT int cpu_support_arm_neon();
 NCNN_EXPORT int cpu_support_arm_vfpv4();
 // asimdhp = aarch64 asimd half precision
 NCNN_EXPORT int cpu_support_arm_asimdhp();
+// asimddp = aarch64 asimd dot product
+NCNN_EXPORT int cpu_support_arm_asimddp();
 
-// avx2 = x86_64 avx2 + fma + f16c
+// avx = x86 avx
+NCNN_EXPORT int cpu_support_x86_avx();
+// fma = x86 fma
+NCNN_EXPORT int cpu_support_x86_fma();
+// xop = x86 xop
+NCNN_EXPORT int cpu_support_x86_xop();
+// f16c = x86 f16c
+NCNN_EXPORT int cpu_support_x86_f16c();
+// avx2 = x86 avx2 + fma + f16c
 NCNN_EXPORT int cpu_support_x86_avx2();
+// avx_vnni = x86 avx vnni
+NCNN_EXPORT int cpu_support_x86_avx_vnni();
+// avx512 = x86 avx512f + avx512cd + avx512bw + avx512dq + avx512vl
+NCNN_EXPORT int cpu_support_x86_avx512();
+// avx512_vnni = x86 avx512 vnni
+NCNN_EXPORT int cpu_support_x86_avx512_vnni();
+
+// msa = mips mas
+NCNN_EXPORT int cpu_support_mips_msa();
+// mmi = loongson mmi
+NCNN_EXPORT int cpu_support_loongson_mmi();
+
+// v = riscv vector
+NCNN_EXPORT int cpu_support_riscv_v();
+// zfh = riscv half-precision float
+NCNN_EXPORT int cpu_support_riscv_zfh();
+// vlenb = riscv vector length in bytes
+NCNN_EXPORT int cpu_riscv_vlenb();
 
 // cpu info
 NCNN_EXPORT int get_cpu_count();
@@ -88,6 +116,15 @@ NCNN_EXPORT int get_omp_thread_num();
 
 NCNN_EXPORT int get_kmp_blocktime();
 NCNN_EXPORT void set_kmp_blocktime(int time_ms);
+
+// need to flush denormals on Intel Chipset.
+// Other architectures such as ARM can be added as needed.
+// 0 = DAZ OFF, FTZ OFF
+// 1 = DAZ ON , FTZ OFF
+// 2 = DAZ OFF, FTZ ON
+// 3 = DAZ ON,  FTZ ON
+NCNN_EXPORT int get_flush_denormals();
+NCNN_EXPORT int set_flush_denormals(int flush_denormals);
 
 } // namespace ncnn
 

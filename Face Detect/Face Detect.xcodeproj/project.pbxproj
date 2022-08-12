@@ -31,8 +31,9 @@
 		4C7D1FDC238CB9720078BD71 /* face1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1FD9238CB9720078BD71 /* face1.png */; };
 		4C7D1FDD238CB9720078BD71 /* IanWong1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1FDA238CB9720078BD71 /* IanWong1.png */; };
 		4C7D1FDE238CB9720078BD71 /* IanWong.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7D1FDB238CB9720078BD71 /* IanWong.png */; };
-		BD12B2EE28331D0D00F1FC38 /* ncnn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD12B2ED28331D0D00F1FC38 /* ncnn.framework */; };
-		BD12B2F028331D1400F1FC38 /* openmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD12B2EF28331D1400F1FC38 /* openmp.framework */; };
+		BD017516283567B3001A45CD /* PreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD017515283567B3001A45CD /* PreviewView.m */; };
+		BD8153B928332898009AE73D /* openmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8153B728332897009AE73D /* openmp.framework */; };
+		BD8153BA28332898009AE73D /* ncnn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8153B828332898009AE73D /* ncnn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,8 +68,10 @@
 		4C7D1FD9238CB9720078BD71 /* face1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face1.png; sourceTree = "<group>"; };
 		4C7D1FDA238CB9720078BD71 /* IanWong1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IanWong1.png; sourceTree = "<group>"; };
 		4C7D1FDB238CB9720078BD71 /* IanWong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IanWong.png; sourceTree = "<group>"; };
-		BD12B2ED28331D0D00F1FC38 /* ncnn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ncnn.framework; sourceTree = "<group>"; };
-		BD12B2EF28331D1400F1FC38 /* openmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openmp.framework; sourceTree = "<group>"; };
+		BD017514283567B3001A45CD /* PreviewView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PreviewView.h; sourceTree = "<group>"; };
+		BD017515283567B3001A45CD /* PreviewView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PreviewView.m; sourceTree = "<group>"; };
+		BD8153B728332897009AE73D /* openmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openmp.framework; sourceTree = "<group>"; };
+		BD8153B828332898009AE73D /* ncnn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ncnn.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +79,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8153BA28332898009AE73D /* ncnn.framework in Frameworks */,
 				4C7D1FBA23867CF30078BD71 /* CoreMedia.framework in Frameworks */,
 				4C7D1FB5238679B20078BD71 /* CoreImage.framework in Frameworks */,
 				4C7D1FB0238678B80078BD71 /* AVFoundation.framework in Frameworks */,
-				BD12B2F028331D1400F1FC38 /* openmp.framework in Frameworks */,
-				BD12B2EE28331D0D00F1FC38 /* ncnn.framework in Frameworks */,
+				BD8153B928332898009AE73D /* openmp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +113,8 @@
 				4C7D1FC7238C1D2D0078BD71 /* face_recg */,
 				4C7D1FB2238678E40078BD71 /* VideoViewController.h */,
 				4C7D1FB1238678E40078BD71 /* VideoViewController.mm */,
-				BD12B2ED28331D0D00F1FC38 /* ncnn.framework */,
-				BD12B2EF28331D1400F1FC38 /* openmp.framework */,
+				BD8153B828332898009AE73D /* ncnn.framework */,
+				BD8153B728332897009AE73D /* openmp.framework */,
 				4C0B673D237BAE0100DD0A97 /* face_detect */,
 				4C0B6730237AE87300DD0A97 /* version-RFB */,
 				4C0B6715237AE55400DD0A97 /* AppDelegate.h */,
@@ -127,6 +130,8 @@
 				4C0B672E237AE59500DD0A97 /* FaceModel.mm */,
 				4C7D1FCB238C1EEE0078BD71 /* FaceRegModel.mm */,
 				4C7D1FC8238C1E960078BD71 /* FaceRegModel.h */,
+				BD017514283567B3001A45CD /* PreviewView.h */,
+				BD017515283567B3001A45CD /* PreviewView.m */,
 			);
 			path = "Face Detect";
 			sourceTree = "<group>";
@@ -200,7 +205,7 @@
 		4C0B670A237AE55400DD0A97 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = Evergreen;
 				TargetAttributes = {
 					4C0B6711237AE55400DD0A97 = {
@@ -259,6 +264,7 @@
 			files = (
 				4C7D1FB3238678E40078BD71 /* VideoViewController.mm in Sources */,
 				4C0B671A237AE55400DD0A97 /* ViewController.mm in Sources */,
+				BD017516283567B3001A45CD /* PreviewView.m in Sources */,
 				4C0B6725237AE55700DD0A97 /* main.m in Sources */,
 				4C0B672F237AE59500DD0A97 /* FaceModel.mm in Sources */,
 				4C0B6717237AE55400DD0A97 /* AppDelegate.m in Sources */,
@@ -314,6 +320,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -339,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -373,6 +380,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -392,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -408,6 +416,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6X27PB5BH;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Face\\ Detect",
@@ -418,11 +427,13 @@
 					"$(PROJECT_DIR)/Face\\ Detect/**",
 					"$(PROJECT_DIR)/Face\\ Detect",
 					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect",
 				);
 				INFOPLIST_FILE = "Face Detect/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "ianwong.Sunyard.com.Face-Detect";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evergreenlabs.facecount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -436,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F6X27PB5BH;
 				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Face\\ Detect",
@@ -446,12 +458,14 @@
 					"$(PROJECT_DIR)/Face\\ Detect/**",
 					"$(PROJECT_DIR)/Face\\ Detect",
 					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect",
+					"$(PROJECT_DIR)/Face\\ Detect",
 				);
 				INFOPLIST_FILE = "Face Detect/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "ianwong.Sunyard.com.Face-Detect";
+				PRODUCT_BUNDLE_IDENTIFIER = com.evergreenlabs.facecount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

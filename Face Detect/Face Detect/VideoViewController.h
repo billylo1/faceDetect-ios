@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "PreviewView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface VideoViewController : UIViewController
 @property (nonatomic, weak) id<bankCardVideoControllerDelegate> delegate;
+@property (strong, nonatomic) IBOutlet PreviewView *previewView;
+- (IBAction)countAction:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *countButton;
 @end
 
 NS_ASSUME_NONNULL_END
